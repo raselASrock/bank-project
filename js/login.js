@@ -21,9 +21,10 @@ const password = passwordField.value;
     // DANGER: Donot Check/Verify email & password on the clint side
     // Step: 4 Verify email & password  and check wheather valid user or not!!!
 if( email === 'sontan@bap.com' && password === 'secret-bank'){
-    console.log('valid user')
+    // console.log('valid user')
+    window.location.href = 'bank.html'
 }
 else{
-    console.log('invalid user')
+    alert('invalid user. Please fill the item properly')
 }
 })
